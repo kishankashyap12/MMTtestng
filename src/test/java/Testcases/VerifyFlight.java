@@ -53,11 +53,33 @@ public class VerifyFlight extends MMTbaseclass {
 
 		fpo.Search().click();
 		
-		fpo.AcceptPopup().click();
+		try {
+			fpo.AcceptPopup().click();
+		}
+		catch(Exception e) {
+			fpo.Refresh().click();
+		}
+		
+	//	fpo.AcceptPopup().click();
 		
 		fpo.ViewPrice().click();
 		
 		fpo.BookNow().click();
+		
+/*		Set<String> obj = driver.getWindowHandles();
+		Iterator<String> it = obj.iterator();
+		String Parent_window = it.next();
+		String Child_window = it.next();
+		driver.switchTo().window(Child_window); */
+		
+		fpo.AddNewAdult().click();
+		fpo.FirstName().sendKeys("KIShan");
+		fpo.LastName().sendKeys("kash");
+		
+		
+		
+		
+		
 		
 		
 		
