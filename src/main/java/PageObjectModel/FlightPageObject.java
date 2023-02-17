@@ -74,6 +74,14 @@ public class FlightPageObject {
 	public List<WebElement> Firetype(){
 		return driver.findElements(firetype);
 	}
+	
+	//Flight List Page
+	
+	private By refresh = By.xpath("//button[@class='button buttonPrimary buttonBig fontSize14']");
+	public WebElement Refresh () {
+		return driver.findElement(refresh);
+	}
+	
 	private By acceptpopup = By.xpath("//button[@class='button buttonSecondry buttonBig fontSize12 relative']");
 	public WebElement AcceptPopup() {
 		return driver.findElement(acceptpopup);
@@ -91,6 +99,20 @@ public class FlightPageObject {
 	public WebElement AcceptNotice() {
 		return driver.findElement(acceptnotice);
 	} 
+	
+	//Passenger Details page
+	private By addnewadult = By.xpath("//button[@class='addTravellerBtn']");
+	public WebElement AddNewAdult() {
+		return driver.findElement(addnewadult);
+	}
+	private By firstname = By.xpath("//input[@placeholder='First & Middle Name']");
+	public WebElement FirstName() {
+		return driver.findElement(firstname);
+	}
+	private By lastname = By.xpath("//input[@placeholder='Last Name']");
+	public WebElement LastName() {
+		return driver.findElement(lastname);
+	}
 	
 	
 	
