@@ -66,12 +66,12 @@ public class VerifyFlight extends MMTbaseclass {
 		
 		fpo.BookNow().click();
 		
-/*		Set<String> obj = driver.getWindowHandles();
+		Set<String> obj = driver.getWindowHandles();
 		Iterator<String> it = obj.iterator();
 		String Parent_window = it.next();
 		String Child_window = it.next();
-		driver.switchTo().window(Child_window); */
-		
+		driver.switchTo().window(Child_window); 
+		Thread.sleep(3000);
 		fpo.AddNewAdult().click();
 		fpo.FirstName().sendKeys("KIShan");
 		fpo.LastName().sendKeys("kash");
