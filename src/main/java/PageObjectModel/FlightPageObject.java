@@ -113,8 +113,27 @@ public class FlightPageObject {
 	public WebElement LastName() {
 		return driver.findElement(lastname);
 	}
+	private By gender = By.xpath("//span[@class='selectTabText']");
+	public List<WebElement> Gender(){
+		return driver.findElements(gender);
+	}
 	
-	
+	private By wheelchairdropdown = By.xpath("(//div[@class='dropdown__indicators css-1wy0on6'])[1]");
+	public WebElement WheelchairDropDown() {
+		return driver.findElement(wheelchairdropdown);
+	}
+	private By mobileno = By.xpath("//input[@placeholder='Mobile No']");
+	public WebElement Mobile() {
+		return driver.findElement(mobileno);
+	}
+	private By email = By.xpath("//input[@placeholder='Email']");
+	public WebElement Email() {
+		return driver.findElement(email);
+	}
+	private By continueButton = By.xpath("//button[@class='lato-black button buttonPrimary extraPadBtn fontSize16 ']");
+	public WebElement Continuebtn() {
+		return driver.findElement(continueButton);
+	}
 	
 	
 	

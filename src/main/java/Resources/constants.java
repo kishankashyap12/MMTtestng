@@ -11,4 +11,7 @@ public class constants {
 	public static String FireType="Armed Forces "+ " Fares";
 	public static String EnterMonthYear="October 2023";
 	public static String EnterDate="16";
+	public static String Gender ="MALE";
+	public static String Mobile = "7773846122";
+	public static String EMail = "Kishankashyap55@gmial.com";
 }
